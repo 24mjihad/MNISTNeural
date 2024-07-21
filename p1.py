@@ -10,7 +10,7 @@ print(output)
 
 """
 
-
+"""
 inputs = [1,2,3,2.5]
 weights1 = [.2,.8,-.5,1.0]
 weights2 = [.5,-.91,.26,-.5]
@@ -25,4 +25,33 @@ output = [inputs[0]*weights1[0] + inputs[1]*weights1[1]+inputs[2]*weights1[2] +i
 
 print(output)
 
+"""
+'''
+#vector * a matrix --> dot product (numpy)
+import numpy as np
+
+inputs = [1,2,3,2.5]
+
+weights = [.2,.8,-.5,1]
+
+bias = 2
+
+
+output = np.dot(weights, inputs) + bias
+
+'''
+
+import numpy as np
+
+inputs = [1,2,3,2.5]
+
+weights = [[.2,.8,-.5,1],
+           [.5,-.91,.26,-.5],
+           [-.26,-.27,.17,.87]]
+
+bias = [2,3,.5]
+
+
+output = np.dot(weights, inputs) + bias
+print(output)
 
