@@ -55,4 +55,3 @@ dx = [drelu_dx0, drelu_dxw1, drelu_dxw2] # gradients on input
 dw = [drelu_dxw0, drelu_dxw1, drelu_dxw2] # gradients on weights
 db = drelu_db # gradient on bias..just 1 here.
 
-
